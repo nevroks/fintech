@@ -1,6 +1,15 @@
 .footer {
-	background-color: rgb(62, 62, 62);
-	padding-top: 50px;
-	padding-bottom: 50px;
-	margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 85px;
 }
+
+.footer-comp {
+    display: flex;
+    column-gap: 50px;
+}
+
+.footer-creator {}
