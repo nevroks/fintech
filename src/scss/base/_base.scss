@@ -2,14 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-//for sticky footer
-html,
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
 //styles
 * {
     font-family: var(--font-main);
@@ -18,9 +10,14 @@ body {
 }
 
 h1 {
-    font-size: 130px;
+    font-size: 140px;
     font-weight: 600;
     line-height: 156px;
+}
+
+h2 {
+    font-size: 85px;
+    line-height: 100px;
 }
 
 //content 1800px
