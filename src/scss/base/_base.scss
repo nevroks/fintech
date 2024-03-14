@@ -1,19 +1,30 @@
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
-body {
-	background-color: var(--page-bg);
-	color: var(--text-color);
-    font-family: var(--font-main);
-}
 //for sticky footer
-html, body {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
+html,
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+//styles
+* {
+    font-family: var(--font-main);
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 130px;
+    font-weight: 600;
+    line-height: 156px;
+}
+
 //content 1500px
-header,footer,section{
-	padding: 0 calc(50% - 750px);
+header,
+footer,
+section {
+    padding: 0 calc(50% - 750px);
 }
