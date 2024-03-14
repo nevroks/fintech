@@ -1,0 +1,109 @@
+.preview {
+    padding: unset;
+    margin-bottom: 20px;
+}
+
+.preview-title {
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+
+.preview__img-container {
+    height: 805px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./../../img/fintechHallImg.png');
+    position: relative;
+}
+
+.preview__img-container__apply {
+    position: absolute;
+    top: 52px;
+    left: 80px;
+    border-radius: 92px;
+    width: fit-content;
+    font-size: 26px;
+    line-height: 32px;
+    background-color: var(--accent-color);
+    padding: 8px 17px 8px 25px;
+}
+
+.preview__img-container__list {
+    position: absolute;
+    right: 0;
+    top: -110px;
+    ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        position: absolute;
+        top: 120px;
+        right: 130px;
+        li {
+            font-size: 26px;
+            line-height: 26px;
+        }
+    }
+    &::after {
+        content: url('./../../img/rects/previewRectImg.png');
+    }
+}
+
+.place {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 30px;
+}
+
+.place__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 51px;
+    max-width: 650px;
+}
+
+.place-title span {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        min-height: 110%;
+        bottom: -5px;
+        left: -17px;
+        min-width: 110%;
+        padding: 5px 17px;
+        border: 2px solid var(--main-font-color);
+        border-radius: 67px;
+    }
+}
+
+.place-text {
+    font-size: 45px;
+    line-height: 60px;
+}
+
+.place__benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 25px;
+}
+
+.place__benefits-list__item {
+    padding: 20px 36px;
+    font-size: 17px;
+    line-height: 23px;
+    border: 1px solid var(--main-font-color);
+    border-radius: 34px;
+}
+
+.partners {
+    margin: 438px 0 400px;
+}
+
+.partners__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
