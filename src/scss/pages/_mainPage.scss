@@ -107,3 +107,171 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.work {
+    padding: 0;
+    background-image: url('./../../img/manInGlassImg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    row-gap: 128px;
+    p {
+        color: var(--primary-font-color);
+        max-width: 700px;
+        font-size: 45px;
+        line-height: 55px;
+    }
+}
+
+.fintechImgs {
+    padding: 0;
+}
+
+.fintechImgs-img1,
+.fintechImgs-img2 {
+    height: 100vh;
+    width: 100%;
+}
+
+.bookYourPlace {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    margin: 180px 0 70px;
+}
+
+.bookYourPlace__text-container {
+    position: relative;
+    &::after {
+        content: url('./../../img/diagonalRightDownArrow.svg');
+        z-index: 10;
+        position: absolute;
+        right: 10px;
+        top: 250px;
+        transform: translate(100%);
+    }
+}
+
+.bookYourPlace__text-container__title {
+    font-size: 47px;
+    line-height: 76px;
+    span {
+        position: relative;
+        top: -30px;
+        font-size: 160px;
+        line-height: 153px;
+    }
+}
+
+.bookYourPlace__text-container__price--price {
+    font-size: 35px;
+    line-height: 24px;
+    margin-bottom: 40px;
+    sup {
+        font-size: 55px;
+        line-height: 24px;
+    }
+}
+
+.bookYourPlace__text-container__price--aditional {
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.bookYourPlace__text-container__button {
+    position: relative;
+    border: 1px solid var(--accent-color);
+    border-radius: 42px;
+    background: var(--accent-color);
+    transition: all 0.2s;
+    font-size: 45px;
+    line-height: 50px;
+    padding: 10px 40px;
+    display: flex;
+    column-gap: 23px;
+    align-items: center;
+    &:hover {
+        background-color: #e6b332;
+    }
+    &:active {
+        background-color: #cea53d;
+        bottom: -2px;
+    }
+    &::after {
+        position: relative;
+        top: -3px;
+        content: url('./../../img/blackRightArrow.svg');
+    }
+}
+
+.bookYourPlace__img-container {
+    transform: rotateY(180deg);
+    display: flex;
+    img {
+        position: relative;
+        right: 100px;
+        bottom: -70px;
+    }
+}
+
+.operatedBy {
+    display: flex;
+    column-gap: 80px;
+    margin-bottom: 140px;
+}
+
+.operatedBy__fintech {
+    max-width: 130px;
+}
+
+.operatedBy__fintech-text {
+    margin-top: 35px;
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.operatedBy-preTitle {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.operatedBy-text {
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 550px;
+    margin-top: 16px;
+}
+
+.operatedBy-img {
+    transform: scale(140%);
+    position: relative;
+    left: 18px;
+}
+
+.operatedBy__companies {
+    display: flex;
+    column-gap: 120px;
+    margin-top: 40px;
+}
+
+.operatedBy__companies-financers,
+.operatedBy__companies-supporters {
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+    div {
+        display: flex;
+        column-gap: 120px;
+        img {
+            transform: scale(140%);
+        }
+    }
+}
