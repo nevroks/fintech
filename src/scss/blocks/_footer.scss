@@ -11,3 +11,14 @@
     display: flex;
     column-gap: 50px;
 }
+
+@media (max-width:600px) {
+    .footer {
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+    .footer-comp {
+        column-gap: 10px;
+    }
+}

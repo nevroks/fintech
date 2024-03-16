@@ -64,7 +64,7 @@
     max-width: 650px;
 }
 
-.place-title span {
+.place-titlespan {
     position: relative;
     &::after {
         content: '';
@@ -273,5 +273,199 @@
         img {
             transform: scale(140%);
         }
+    }
+}
+
+@media(max-width:1200px) {
+    .bookYourPlace__text-container__title {
+        font-size: 41px;
+        span {
+            font-size: 153px;
+            line-height: 153px;
+        }
+    }
+    .bookYourPlace {
+        justify-content: unset;
+    }
+    .bookYourPlace__text-container__button {
+        font-size: 39px;
+    }
+    .bookYourPlace__img-container {
+        position: absolute;
+        right: 0;
+        transform: rotateY(0);
+        z-index: -1;
+        img {
+            position: unset;
+            transform: scale(70%);
+        }
+    }
+    .operatedBy__companies {
+        column-gap: 80px;
+    }
+    .operatedBy__companies-financers,
+    .operatedBy__companies-supporters {
+        p {
+            font-size: 14px;
+        }
+        div {
+            column-gap: 40px;
+            img {
+                transform: scale(100%);
+            }
+        }
+    }
+}
+
+@media(max-width:900px) {
+    .bookYourPlace__text-container::after {
+        display: none;
+    }
+    .bookYourPlace {
+        justify-content: center;
+    }
+    .bookYourPlace__img-container {
+        display: none;
+    }
+    .operatedBy__companies {
+        flex-direction: column;
+    }
+    .operatedBy {
+        column-gap: 40px;
+        margin-bottom: 100px;
+    }
+    .partners {
+        margin: 200px 0;
+    }
+    .partners__list {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .fintechImgs-img1,
+    .fintechImgs-img2 {
+        height: auto;
+    }
+    .preview__img-container__apply {
+        position: absolute;
+        top: 22px;
+        left: 30px;
+        font-size: 20px;
+        line-height: 26px;
+        padding: 6px 14px 6px 21px;
+    }
+    .place-text {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .work {
+        padding: 60px 0;
+        height: auto;
+        row-gap: 60px;
+        p {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+}
+
+@media(max-width:600px) {
+    .preview__img-container__list {
+        &::after {
+            display: none;
+        }
+        ul {
+            border-radius: 100px 0 100px 0;
+            padding: 30px 40px;
+            background-color: var(--accent-color);
+            top: 130px;
+            right: 0px;
+            li {
+                font-size: 20px;
+                line-height: 12px;
+            }
+        }
+    }
+    .operatedBy__companies-financers,
+    .operatedBy__companies-supporters {
+        div {
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    }
+    .bookYourPlace__text-container__price--price {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    .bookYourPlace__text-container__title span {
+        font-size: 120px;
+        line-height: 120px;
+    }
+}
+
+@media (max-width:400px) {
+    .partners__list {
+        flex-wrap: wrap;
+        gap: 7px;
+    }
+    .preview__img-container__apply {
+        top: 10px;
+        left: 10px;
+    }
+    .preview__img-container {
+        height: 605px;
+    }
+    .bookYourPlace__text-container__button {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .bookYourPlace__text-container__title {
+        font-size: 38px;
+        line-height: 40px;
+        margin-bottom: 10px;
+        br {
+            display: none;
+        }
+        span {
+            font-size: 80px;
+            line-height: 60px;
+            position: unset;
+        }
+    }
+    .preview-title {
+        margin-left: 20px;
+    }
+    .operatedBy-text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .bookYourPlace__text-container__price--price sup {
+        font-size: 35px;
+        line-height: 24px;
+    }
+    .bookYourPlace__text-container__price--price {
+        font-size: 18px;
+    }
+    .bookYourPlace {
+        margin: 100px 0 70px;
+    }
+    .preview__img-container__list {
+        top: 0;
+    }
+    .preview__img-container__list {
+        ul {
+            padding: 30px 30px;
+            li {
+                font-size: 16px;
+                line-height: 12px;
+            }
+        }
+    }
+    .footer-comp {
+        flex-direction: column-reverse;
+    }
+    .footer-creator {
+        max-width: 130px;
+        text-align: center;
     }
 }
