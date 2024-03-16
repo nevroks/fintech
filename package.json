@@ -35,5 +35,8 @@
 	},
 	"browserslist": [
 		"last 5 versions"
-	]
+	],
+	"dependencies": {
+		"gh-pages": "^6.1.1"
+	}
 }
